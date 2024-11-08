@@ -7,7 +7,8 @@ int main()
     
     scanf("%d", &tam);
     
-    vetor = (int *) malloc(tam * sizeof(int));
+    if(tam > 0){
+        vetor = (int *) malloc(tam * sizeof(int));
     
     for(int i = 0; i < tam; i++){
         scanf("%d", &vetor[i]);
@@ -20,6 +21,9 @@ int main()
     }
     
     printf("]");
+    }
+    
+    else printf("[vazio]");
     
     free(vetor);
 
