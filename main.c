@@ -3,7 +3,7 @@
 
 int main()
 {
-    int tam, *vetor;
+    int tam;
     
     scanf("%d", &tam);
     
@@ -12,7 +12,7 @@ int main()
     }
     
     else{
-        vetor = (int *) malloc(tam * sizeof(int));
+        int *vetor = (int *) malloc(tam * sizeof(int));
     
     for(int i = 0; i < tam; i++){
         scanf("%d", &vetor[i]);
@@ -25,9 +25,7 @@ int main()
     }
     
     printf("]");
-    }
-    
     free(vetor);
-
+    }
     return 0;
 }
