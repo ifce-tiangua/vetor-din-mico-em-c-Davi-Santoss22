@@ -16,7 +16,7 @@ int main()
     printf("[%d", vetor[0]);
     
     for(int i = 1; i < tam; i++){
-        printf(",%d", vetor[i]);
+        printf(", %d", vetor[i]);
     }
     
     printf("]");
