@@ -23,7 +23,7 @@ int main()
     printf("]");
     }
     
-    else printf("[vazio]");
+    else printf("");
     
     free(vetor);
 
