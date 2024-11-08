@@ -9,7 +9,7 @@ int main()
     
     if (tam == 0) printf("[vazio]");
     
-    else if(tam > 0){
+    else{
         vetor = (int *) malloc(tam * sizeof(int));
     
     for(int i = 0; i < tam; i++){
