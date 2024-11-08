@@ -13,11 +13,13 @@ int main()
         scanf("%d", &vetor[i]);
     }
     
-    printf("%d", vetor[0]);
+    printf("[%d", vetor[0]);
     
     for(int i = 1; i < tam; i++){
         printf(",%d", vetor[i]);
     }
+    
+    printf("]");
     
     free(vetor);
 
