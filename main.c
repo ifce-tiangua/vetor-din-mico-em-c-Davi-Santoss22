@@ -3,11 +3,13 @@
 
 int main()
 {
-    int tam = 0, *vetor;
+    int tam, *vetor;
     
     scanf("%d", &tam);
     
-    if (tam == 0) printf("[vazio]");
+    if (tam == 0) {
+        printf("[vazio]");
+    }
     
     else{
         vetor = (int *) malloc(tam * sizeof(int));
